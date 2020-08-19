@@ -1,10 +1,7 @@
-body, html {
+*{
   margin:0;
   padding:0; 
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
 }
-
 :root {
   /**** Colors ****/
   /*intro and email sign up background*/
@@ -23,7 +20,48 @@ body, html {
 
   --white: hsl(0, 0%, 100%);
 }
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: var(--dark-blue-2);
+  color: var(--white);
+}
+
+/********************
+ ****** HEADER ******
+ ********************/
+.raleway{
+  font-family: 'Raleway', sans-serif;
+}
+header{
+  height: 70px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  font-size: .8rem;
+}
+.logo-container{
+  width: 75px;
+  height: 40px;
+  background-image: url('../images/logo.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#main-menu ul{
+  display: flex;
+}
+#main-menu ul li{
+  list-style: none;
+  padding-left: 25px;
+}
 
 /*### Headings, Call-to-actions, Header Navigation
   font-family: 'Raleway', sans-serif;
 */
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
