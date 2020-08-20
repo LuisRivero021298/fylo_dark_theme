@@ -141,7 +141,8 @@ h1 {
 }
 
 /**/
-.advantage-container {
+.advantage-container,
+.testimony-container {
   padding: 60px 0;
   width: 85%;
   margin: 0 auto;
@@ -164,6 +165,52 @@ h1 {
   text-decoration: none;
   border-bottom: 1px solid var(--cyan);
   padding-bottom: 5px;
+}
+
+/**/
+.testimony-container {
+  width: 78%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+.testimony-container .quotes {
+  background-image: url('../images/bg-quotes.png');
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top:-20px;
+  left: 8px;
+}
+.testimony-container article:first-child {
+  position: relative;
+}
+.testimony-container article {
+  padding: 25px;
+  background-color: var(--dark-blue-4);
+  border-radius: 6px;
+}
+.testimony-container .text-content {
+  font-size: .65rem;
+  line-height: 1.8em;
+}
+.testimony-user-container {
+  display: flex;
+  align-items: center;
+}
+.testimony-user-container img {
+  border-radius: 100%;
+  width: 35px;
+  margin-right: 10px;
+}
+.testimony-container h3 {
+  font-size: .8rem;
+}
+.testimony-container small {
+  font-size: .6rem;
 }
 /*### Headings, Call-to-actions, Header Navigation
   font-family: 'Raleway', sans-serif;
