@@ -69,6 +69,7 @@ header{
   background-position: bottom;
   background-size: 150% 60%;
   position: relative;
+  padding-bottom: 70px;
 }
 .get-started-container .svg-container{
   position: absolute;
@@ -88,9 +89,9 @@ header{
 .center{
   text-align: center;
 }
-h1, 
-.get-started-container p{
+.get-started-container .started-content{
   width: 85%;
+  margin: 0 auto;
 }
 h1 {
   margin: 0 auto;
@@ -108,13 +109,32 @@ h1 {
 .btn-started{
   display: inline-block;
   padding: 16px 0;
-  width: 60%;
+  width: 75%;
   border-radius: 40px;
   background: linear-gradient(90deg,var(--cyan), var(--blue));
   color: white;
   text-decoration: none;
 }
 
+/**/
+.features-container{
+  width: 85%;
+  padding: 70px 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 75px;
+  margin: 0 auto;
+}
+.features-container h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+.features-container div {
+  margin-bottom: 30px;
+}
+.features-container div img{
+  width: 73px;
+}
 /*### Headings, Call-to-actions, Header Navigation
   font-family: 'Raleway', sans-serif;
 */
