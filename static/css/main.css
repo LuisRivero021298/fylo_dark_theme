@@ -252,13 +252,48 @@ h1 {
   font-family: 'Raleway', sans-serif;
 */
 
-
 /********************
  ******* Footer *******
  ********************/
 footer {
+  padding: 0 7.5%;
   background-color: var(--dark-blue-3);
   padding-top: 230px;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+footer .contact-container img {
+  margin-bottom: 20px;
+}
+footer .contact-container div{
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+footer .contact-container span{
+  height: 25px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+footer .contact-container p {
+  font-size: 1rem;
+  line-height: 1.6em;
+}
+.contact-icon-map{
+  background-image: url('../images/icon-location.svg');
+  width: 40px;
+  margin-right: 2em;
+}
+.contact-icon-email {
+  background-image: url('../images/icon-email.svg');
+  width: 18px;
+  margin-right: 1.7em;
+}
+.contact-icon-phone {
+  background-image: url('../images/icon-phone.svg');
+  width: 15px;
+  margin-right: 2em;
 }
 
 .attribution { font-size: 11px; text-align: center; }
