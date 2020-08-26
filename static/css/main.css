@@ -167,6 +167,7 @@ h1 {
 }
 .advantage-container a{
   display: inline-block;
+  max-width: 130px;
   color: var(--cyan);
   text-decoration: none;
   border-bottom: 1px solid var(--cyan);
@@ -394,5 +395,27 @@ footer .social-container span {
   .features-container {
     width: 60%;
     grid-template-columns: repeat(2,1fr);
+  }
+ 
+  /**/
+  .advantage-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+  }
+  .advantage-container .image-advantage {
+    height: 420px;
+  }
+  .advantage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .advantage-content * {
+    margin: 5px 0;
+  }
+  .advantage-container h2 {
+    font-size: 1.5rem;
+    width: 55%;
   }
 }
