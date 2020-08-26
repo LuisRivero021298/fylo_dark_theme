@@ -138,11 +138,12 @@ h1 {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
-.features-container div {
+.img-container {
   margin-bottom: 30px;
+  height: 80px;
 }
 .features-container div img{
-  width: 73px;
+  object-fit: contain;
 }
 
 /**/
@@ -382,7 +383,16 @@ footer .social-container span {
     font-size: 1.1rem;
     line-height: 1.8em;
   }
+  .text-content {
+    font-size: .9rem;
+  }
   .btn-started {
-    max-width: 250px;
+    max-width: 240px;
+  }
+
+  /**/
+  .features-container {
+    width: 60%;
+    grid-template-columns: repeat(2,1fr);
   }
 }
