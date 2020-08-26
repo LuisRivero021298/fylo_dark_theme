@@ -34,7 +34,7 @@ body{
 .raleway{
   font-family: 'Raleway', sans-serif;
 }
-header{
+header {
   height: 70px;
   width: auto;
   display: flex;
@@ -44,7 +44,7 @@ header{
   font-size: .8rem;
   background-color: var(--dark-blue-1);
 }
-.logo-container{
+.logo-container {
   width: 75px;
   height: 40px;
   background-image: url('../images/logo.svg');
@@ -104,16 +104,14 @@ h1 {
   font-weight: 700;
   font-size: 1.5rem;
   line-height: 1.6em;
-  margin-bottom: 1em;
 }
 .get-started-container .text-content {
   font-size: .95rem;
 }
 .text-content {
-  margin: 0 auto;
+  margin: auto;
   font-size: .85rem;
   line-height: 1.5em;
-  margin-bottom: 1.57em;
 }
 .btn-started {
   display: inline-block;
@@ -161,7 +159,6 @@ h1 {
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  margin-bottom: 20px;
 }
 .advantage-container .text-content,
 .advantage-container a{
@@ -176,6 +173,13 @@ h1 {
 }
 
 /**/
+.card {
+  padding: 25px;
+  border-radius: 6px;
+  width: auto;
+  box-sizing: border-box;
+}
+
 .testimony-container {
   width: 78%;
   display: grid;
@@ -197,11 +201,9 @@ h1 {
   position: relative;
 }
 .testimony-container article {
-  padding: 25px;
   background-color: var(--dark-blue-4);
-  border-radius: 6px;
 }
-.testimony-container .text-content {
+.card__content {
   font-size: .65rem;
   line-height: 1.8em;
 }
@@ -227,33 +229,27 @@ h1 {
   left: 5%;
   right: 5%;
   bottom: -159px;
-  box-sizing: border-box;
-  padding: 25px;
   text-align: center;
   background-color: var(--dark-blue-1);
-  border-radius: 6px;
   box-shadow: 2px 5px 8px rgba(0,0,0,.2);
 }
 .form-container h4 {
   font-size: 1.2rem;
-  margin-bottom: 20px;
+}
+.form-container .card__content{
+  font-size: .85rem;
 }
 .form-container input {
   box-sizing: border-box;
   width: 100%;
   padding: 16px 20px;
   border-radius: 40px;
-  margin-bottom: 20px;
   border: none;
   font-size: .65rem;
 }
 .form-container .btn-started{
   width: 100%;
 }
-/*### Headings, Call-to-actions, Header Navigation
-  font-family: 'Raleway', sans-serif;
-*/
-
 /********************
  ******* Footer *******
  ********************/
@@ -268,13 +264,9 @@ footer {
   gap: 35px;
   grid-template-columns: 1fr;
 }
-footer .contact-container img {
-  margin-bottom: 20px;
-}
 footer .contact-container div{
   display: flex;
   align-items: flex-start;
-  margin-bottom: 10px;
 }
 footer .contact-container span{
   height: 25px;
@@ -352,4 +344,45 @@ footer .social-container span {
 .attribution a { 
   color: var(--white);
   font-weight: 700;
+}
+
+/*** margins ***/
+.mb-1 {
+  margin-bottom: 10px;
+}
+.mb-2 {
+  margin-bottom: 20px;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+
+/*
+ ****** RESPONSIVE ******
+                        */
+@media only screen and (min-width: 1024px) {
+  header {
+    padding: 15px 45px;
+  }
+  .logo-container{
+    width: 90px;
+  }
+  .get-started-container .image-get-started {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+  }
+  .get-started-container .started-content{
+    width: 40%;
+  }
+  h1 {
+    font-size: 1.7rem;
+  }
+  .get-started-container .text-content{
+    font-size: 1.1rem;
+    line-height: 1.8em;
+  }
+  .btn-started {
+    max-width: 250px;
+  }
 }
