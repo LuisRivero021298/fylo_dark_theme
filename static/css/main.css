@@ -427,4 +427,26 @@ footer .social-container span {
   .card__content {
     font-size: .8rem;
   }
+
+  /**/
+  .form-container{
+    left: 22%;
+    right: 22%;
+    padding: 45px 70px;
+  }
+  .form-container form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-height: 60px; 
+  }
+  .form-container input {
+    width: 65%;
+    margin: 0;
+    height: 100%;
+  }
+  .form-container .btn-started {
+    max-width: 150px;
+    padding: 16px;
+  }
 }
