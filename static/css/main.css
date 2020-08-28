@@ -449,4 +449,33 @@ footer .social-container span {
     max-width: 150px;
     padding: 16px;
   }
+
+  /*footer*/
+  footer .contact-container p,
+  footer .about li a {
+    font-size: .9rem;
+  }
+  .footer-grid {
+    gap: 0;
+    row-gap: 20px;
+    grid-template-columns: 500px auto auto;
+    grid-template-areas: "logo-container logo-container logo-container"
+                         "contact about social";
+  }
+  .footer-grid img {
+    grid-area: logo-container;
+  }
+  .footer-grid .contact-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "map phone"
+                         "map mail";
+    gap: 15px;
+  }
+  .footer-grid .contact-icon-map-container {
+    grid-area: map;
+  }
+  .footer-grid .about {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
