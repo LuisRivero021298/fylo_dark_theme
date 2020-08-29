@@ -369,6 +369,9 @@ footer .social-container span {
   .logo-container{
     width: 90px;
   }
+  .get-started-container{
+    background-image: url('../images/bg-curvy-desktop.svg');
+  }
   .get-started-container .image-get-started {
     width: 100%;
     height: 450px;
